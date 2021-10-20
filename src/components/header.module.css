@@ -1,0 +1,20 @@
+nav ul{
+    display: flex;
+    justify-content: center;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: Blur(5px);
+    box-shadow: -1px 4px 7px -2px rgba(0,0,0,0.7);
+    list-style-type: none; 
+    position: sticky;
+}
+
+li a{
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+li:hover{
+    background-color:rgba(255, 255, 255, 0.1) ;
+}
