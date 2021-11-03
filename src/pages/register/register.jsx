@@ -1,10 +1,13 @@
-function RegisterUI(){
-    const handleOnSubmit = (event) =>{
-        event.preventDefault();
-        console.log('submit')
-    }
-    return<>
-        <div>
+import React from 'react'
+import Main from '../../layout/main'
+
+function RegisterUI () {
+  const handleOnSubmit = (event) => {
+    event.preventDefault()
+    console.log('submit')
+  }
+  return <>
+        <Main>
             <form onSubmit={handleOnSubmit}>
                 <input type="text" />
                 <input type="text" />
@@ -12,7 +15,7 @@ function RegisterUI(){
                 <span>Facebook</span>
                 <button>Register</button>
             </form>
-        </div>
+        </Main>
     </>
 }
 export default RegisterUI
