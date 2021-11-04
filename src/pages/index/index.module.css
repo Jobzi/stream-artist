@@ -9,7 +9,7 @@
 .gridMiniContainer{
     display: grid;
     grid-template-columns:10rem auto;
-    gap: 5px;
+    gap: 1px;
     align-items: baseline;
 }
 
@@ -35,11 +35,11 @@
 }
 
 .box{
-  background-color:rgba(37, 49, 51, 0.541) ;
+  background-color:#50aa531f;
   margin: 10px;
   padding: 30px;
-  border-radius: 20px;
-  box-shadow: -5px 4px 10px -5px rgba(0,0,0,0.7);
+  border-radius: 18px;
+  box-shadow: -3px 1px 12px -7px rgba(0,0,0,0.7);
 }
 
 .overlay {

@@ -1,0 +1,44 @@
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.span {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: #4CAF50;
+  box-sizing: border-box;
+}
+
+.buttonFacebook {
+  background-color: #3b5998;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonGoogle {
+  background-color: #dd4b39;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}

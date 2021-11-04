@@ -1,22 +1,23 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { collection, getDocs } from 'firebase/firestore'
 import { Route, Switch } from 'wouter'
-import Header from './components/header'
+import Header from './components/Header/Header'
 import IndexUI from './pages/index'
 import LoginUI from './pages/login/login'
 import RegisterUI from './pages/register/register'
 
 import './App.css'
-import db from './firebase/firebaseConfig.js'
+import { db } from './firebase/firebaseConfig.js'
+import Footer from './components/Footer/Footer'
 
-function App() {
-  useEffect(()=>{
-    const getUser = async() => {
-      const datos = await getDocs(collection(db,"users"))
+function App () {
+  useEffect(() => {
+    const getUser = async () => {
+      const datos = await getDocs(collection(db, 'users'))
       console.log(datos)
     }
     getUser()
-  },[])
+  }, [])
   return (
     <>
       <div className="App">
@@ -26,6 +27,7 @@ function App() {
           <Route path='/login' component={LoginUI}/>
           <Route path='/register' component={RegisterUI}/>
         </Switch>
+        <Footer/>
       </div>
     </>
   )

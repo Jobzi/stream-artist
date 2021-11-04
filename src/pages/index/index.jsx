@@ -1,6 +1,7 @@
 import React from 'react'
 import Main from '../../layout/main'
 import style from './index.module.css'
+// import yaw from '../../assets/yaw.png'
 
 function IndexUI () {
   return <Main>
@@ -23,7 +24,11 @@ function IndexUI () {
               </div>
             </div>
           </div>
-          <div className={style.boxRight}><audio src="https://firebasestorage.googleapis.com/v0/b/yawrecords-77b5b.appspot.com/o/record%2Fcafune.mp3?alt=media&token=0e6e9cd3-b98f-4fb6-a50b-556aea094928" controls ></audio></div>
+          <div className={style.boxRight}>
+              {/* <img src={yaw} alt="Yaw Image" /> */}
+            <audio src="https://firebasestorage.googleapis.com/v0/b/yawrecords-77b5b.appspot.com/o/record%2Fcafune.mp3?alt=media&token=0e6e9cd3-b98f-4fb6-a50b-556aea094928" controls >
+            </audio>
+          </div>
         </div>
     </Main>
 }
