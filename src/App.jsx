@@ -9,6 +9,7 @@ import RegisterUI from './pages/register/register'
 import './App.css'
 import { db } from './firebase/firebaseConfig.js'
 import Footer from './components/Footer/Footer'
+import DashboardUI from './pages/dashboard/dashboard'
 
 function App () {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App () {
           <Route path='/' component={IndexUI}/>
           <Route path='/login' component={LoginUI}/>
           <Route path='/register' component={RegisterUI}/>
+          <Route path='/dashboard' component={DashboardUI}/>
         </Switch>
         <Footer/>
       </div>

@@ -8,13 +8,16 @@ function Header () {
     <nav className={style.nav}>
         <ul className={style.ul}>
             <li className={style.li}>
-                <Link to='/'><a className={style.a}>Home</a></Link>
+                <Link to='/' className={style.a}>Home</Link>
             </li>
             <li className={style.li}>
-                <Link to='/login'><a className={style.a}>Login</a></Link>
+                <Link to='/login' className={style.a}>Login</Link>
             </li>
             <li className={style.li}>
-                <Link to='/register'><a className={style.a}>Register</a></Link>
+                <Link to='/register'className={style.a}>Register</Link>
+            </li>
+            <li className={style.li}>
+                <Link to='/dashboard'className={style.a}>Dashboard</Link>
             </li>
             {true &&
                 <li className={style.li}>
